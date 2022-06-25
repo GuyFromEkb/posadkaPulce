@@ -1,0 +1,42 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+    outline: none!important;
+    transition-duration: .2s;
+    font-size: 16px;
+    &:active {
+        transform: scale(1.02)
+    }
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+@import 'blocks/main-content';
+@import 'blocks/promo';
+@import 'blocks/toolbar';
+@import 'blocks/body';
+@import 'blocks/footer';

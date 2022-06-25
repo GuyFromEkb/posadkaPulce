@@ -1,0 +1,59 @@
+.body {
+    padding-top: 44px;
+    height: 783px;
+    background: url(../img/body/wave-bg.png) no-repeat 100% 136px #0F006B;
+    &__wrap {
+        justify-content: space-between;
+        display: flex;
+    }
+    &__img {
+        margin-right: 95px;
+        object-fit: cover;
+        height: 404px;
+        width: auto;
+    }
+    &__descr {
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                margin-top: 17px;
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                line-height: 22px;
+            }
+        }
+        .li-new-long {
+            position: absolute;
+            right: 26px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__request {
+        margin-top: 120px;
+        p {
+            width: 695px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    &__link {
+        transition: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 413px;
+        height: 54px;
+        background: #C79C4C;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        &:active {
+            transform: scale(1.02)
+        }
+    }
+}

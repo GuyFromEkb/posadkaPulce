@@ -1,0 +1,110 @@
+.promo {
+    padding-top: 84px;
+    height: 610px;
+    background: url(../img/promo/promo-bg_wave.png) no-repeat bottom, url(../img/promo/promo-bg_tariff.png) no-repeat 960px 235px, radial-gradient(50.55% 35.43% at 70.91% 21.96%, #27419D 0%, #0F006B 100%);
+    h1 {
+        margin: 0;
+        margin-top: 103px;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 76px;
+        text-transform: uppercase;
+        color: #FFBF47;
+    }
+    &__info {
+        margin-top: 40px;
+    }
+    &__tariff-wrap {
+        position: relative;
+        margin-top: 25px;
+        display: flex;
+        gap: 24px;
+    }
+    &__tariff-link {
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 192px;
+        height: 38px;
+        background: #373887;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 8px rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.02)
+        }
+    }
+    &__tariff-list {
+        transition: .4s;
+        transform: translateY(-100%);
+        top: -15px;
+        position: absolute;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background: #757DB5;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+        &::before {
+            content: "";
+            border: solid transparent;
+            position: absolute;
+            top: 100%;
+            left: 30px;
+            border-top-color: #757DB5;
+            border-width: 9px;
+            margin-left: -9px;
+        }
+        ul {
+            line-height: 30px;
+            list-style-type: none;
+            li {
+                margin-left: 50px;
+                position: relative;
+                font-weight: 600;
+                font-size: 14px;
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: -28px;
+                    transform: translateY(-50%);
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url('../icons/promo/list.png') center/cover no-repeat;
+                }
+            }
+        }
+    }
+    .silver-tariff {
+        left: 150px;
+        width: 435px;
+        height: 216px;
+    }
+    .gold-tariff {
+        left: 365px;
+        line-height: 18px;
+        width: 594.5px;
+        height: 260px;
+        ul {
+            line-height: 18px;
+            li {
+                margin-top: 15px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .platinum-tariff {
+        left: 580px;
+    }
+    &__subtitle {
+        line-height: 32px;
+        width: 650px;
+        margin-top: 41px;
+    }
+}

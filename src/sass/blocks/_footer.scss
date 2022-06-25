@@ -1,0 +1,65 @@
+.footer {
+    background: #1D0F74;
+    height: 345px;
+    &__wrap {
+        justify-content: space-between;
+        display: flex;
+    }
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__tolstova {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    &__phone {
+        display: flex;
+        div {
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__social {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        img {
+            object-fit: cover;
+            height: 40px;
+            width: auto;
+        }
+    }
+    &__btn {
+        margin-top: 20px;
+        font-weight: 600;
+        background: #fff;
+        width: 410px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        line-height: 36px;
+        color: #1D0F74;
+        transition-duration: .5s;
+        cursor: pointer;
+        border-radius: 100px;
+    }
+    &__politics {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
